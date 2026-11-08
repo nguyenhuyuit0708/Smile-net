@@ -1,0 +1,57 @@
+# =============================================================================
+# Python Bytecode & Environments
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+env/
+
+# =============================================================================
+# Private Keys & Temporary PKI Artifacts
+# =============================================================================
+certs/*.key
+certs/*.csr
+certs/*.srl
+certs/catalyst_ext.cnf
+
+# =============================================================================
+# Large Packet Captures (PCAP / PCAPNG) & Raw Node Logs
+# =============================================================================
+captures/*.pcap
+captures/*.pcapng
+data/*.jsonl
+
+# =============================================================================
+# OS, WSL & IDE Files
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
+

@@ -1,0 +1,88 @@
+{
+  "experiment": {
+    "topology": "5 Nodes (1 Server + 4 Clients via LinuxBridge Switch s1)",
+    "pqc_sessions_count": 1000,
+    "classic_baseline_sessions_count": 200,
+    "pqc_kem": "X25519MLKEM768 (Hybrid X25519 + NIST FIPS 203 ML-KEM-768, IANA 0x11EC)",
+    "pqc_signature": "ML-DSA-65 (NIST FIPS 204 Dilithium3) + Catalyst X.509v3",
+    "cipher_suite": "TLS_AES_256_GCM_SHA384"
+  },
+  "pqc_pcap_summary": {
+    "total_packets_captured": 32846,
+    "total_wire_bytes_captured": 19073233,
+    "total_wire_megabytes": 18.19,
+    "avg_packet_size_bytes": 580.69,
+    "max_packet_size_bytes": 1514,
+    "min_packet_size_bytes": 66,
+    "tcp_flags_distribution": {
+      "S": 1000,
+      "SA": 1000,
+      "A": 19907,
+      "PA": 8939,
+      "FA": 2000
+    },
+    "capture_duration_sec": 5.576
+  },
+  "pqc_session_metrics": {
+    "tls_handshake_ms_mean": 7.602,
+    "tls_handshake_ms_median": 7.456,
+    "tls_handshake_ms_std": 0.994,
+    "tls_handshake_ms_p95": 9.353,
+    "tls_handshake_ms_p99": 11.566,
+    "tcp_connect_ms_mean": 4.65,
+    "pqc_sign_ms_mean": 0.1901,
+    "pqc_verify_ms_mean": 0.0703,
+    "total_session_ms_mean": 18.58,
+    "packets_per_session_mean": 33.57,
+    "wire_bytes_per_session_mean": 19493.1,
+    "client_hello_bytes": 1378,
+    "server_hello_bytes": 1210,
+    "server_enc_handshake_bytes": 6512,
+    "cert_der_bytes": 6146
+  },
+  "classic_baseline_metrics": {
+    "tls_handshake_ms_mean": 6.951,
+    "tls_handshake_ms_median": 6.83,
+    "total_session_ms_mean": 17.07,
+    "packets_per_session_mean": 15.81,
+    "wire_bytes_per_session_mean": 3367.0,
+    "client_hello_bytes": 202,
+    "server_hello_bytes": 122,
+    "server_enc_handshake_bytes": 1225,
+    "cert_der_bytes": 859
+  },
+  "per_node_breakdown": {
+    "client_1": {
+      "ip": "10.0.0.2",
+      "sessions": 250,
+      "tls_handshake_ms_mean": 7.058,
+      "total_session_ms_mean": 17.109,
+      "wire_bytes_mean": 19501.6,
+      "packets_mean": 33.2
+    },
+    "client_2": {
+      "ip": "10.0.0.3",
+      "sessions": 250,
+      "tls_handshake_ms_mean": 7.451,
+      "total_session_ms_mean": 18.101,
+      "wire_bytes_mean": 19218.1,
+      "packets_mean": 32.99
+    },
+    "client_3": {
+      "ip": "10.0.0.4",
+      "sessions": 250,
+      "tls_handshake_ms_mean": 7.675,
+      "total_session_ms_mean": 18.956,
+      "wire_bytes_mean": 19847.3,
+      "packets_mean": 34.32
+    },
+    "client_4": {
+      "ip": "10.0.0.5",
+      "sessions": 250,
+      "tls_handshake_ms_mean": 8.225,
+      "total_session_ms_mean": 20.152,
+      "wire_bytes_mean": 19405.3,
+      "packets_mean": 33.77
+    }
+  }
+}
